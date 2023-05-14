@@ -2,7 +2,6 @@ import axios from "axios";
 import React, { useState, useRef } from "react";
 
 export default function UploadImage({ upload }) {
-  const formRef = useRef(null);
 
   const [selectedImage, SetSelectedImage] = useState();
   const [imageUrl, setImageUrl] = useState("");
@@ -43,7 +42,7 @@ export default function UploadImage({ upload }) {
   };
   return (
     <>
-      <form onSubmit={onPost} encType="multipart/form-data" ref={formRef}>
+      <form onSubmit={onPost} encType="multipart/form-data" >
         <input
           type="file"
           accept="image/*"
