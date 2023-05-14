@@ -1,0 +1,40 @@
+.main-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 95%;
+
+  .input-container {
+    width: 90%;
+    height: 50px;
+    display: flex;
+    margin-top: 20px;
+    column-gap: 20px;
+
+    input {
+      width: 80%;
+      border-radius: 20px;
+      padding: 20px;
+    }
+    button {
+      width: 20%;
+      border-radius: 10px;
+    }
+  }
+  .images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    img {
+      height: 200px;
+      width: 200px;
+      border-radius: 10px;
+    }
+  }
+}
